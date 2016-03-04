@@ -22,9 +22,11 @@ filetype plugin indent on
 syntax enable
 
 ""set tab as four blackspace
-:set shiftwidth=4
-:set ts=4
-:set expandtab
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+""set softtabstop=4
 
 ""Using Python3 completion
 let g:ycm_python_binary_path = '/usr/bin/python3'
