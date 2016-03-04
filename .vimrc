@@ -24,3 +24,8 @@ Plugin 'tpope/vim-fugitive'
 "" color for monokai
 syntax enable
 colorscheme monokai
+
+""set tab as four blackspace
+:set shiftwidth=4
+:set ts=4
+:set expandtab
