@@ -25,3 +25,6 @@ syntax enable
 :set shiftwidth=4
 :set ts=4
 :set expandtab
+
+""Using Python3 completion
+let g:ycm_python_binary_path = '/usr/bin/python3'
