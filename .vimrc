@@ -8,16 +8,15 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 
-"Plugin 'L9'
-"
-"Plugin 'https://github.com/scrooloose/nerdtree.git'
-"
-"Plugin 'sickill/vim-monokai'
-"
-"
-"
-"call vundle#end()
-"filetype plugin indent on
+Plugin 'scrooloose/nerdtree.git'
+
+Plugin 'sickill/vim-monokai'
+
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/ListToggle'
+Plugin 'scrooloose/syntastic'
+call vundle#end()
+filetype plugin indent on
 "
 "
 "
@@ -26,6 +25,11 @@ syntax enable
 colorscheme monokai
 
 ""set tab as four blackspace
-:set shiftwidth=4
-:set ts=4
-:set expandtab
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+""set softtabstop=4
+
+""Using Python3 completion
+let g:ycm_python_binary_path = '/usr/bin/python3'
