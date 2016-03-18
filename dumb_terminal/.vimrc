@@ -35,6 +35,7 @@ let mapleader=','
 ""YouCompleteMe configuration
 let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_enable_diagnostic_signs = 0
+let g:ycm_enable_diagnostic_highlighting = 0
 nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>df :YouCompleter GoToDefinition<<CR>
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
