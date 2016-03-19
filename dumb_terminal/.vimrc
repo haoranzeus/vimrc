@@ -10,6 +10,9 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'scrooloose/nerdtree.git'
 
+"" don't used in dumb terminal
+""Plugin 'sickill/vim-monokai'
+
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Valloric/ListToggle'
 Plugin 'scrooloose/syntastic'
@@ -21,6 +24,8 @@ filetype plugin indent on
 "
 "" color for monokai
 syntax enable
+"" don't used in dumb terminal
+""colorscheme monokai
 
 ""set tab as four blackspace
 set smartindent
