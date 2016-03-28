@@ -42,8 +42,9 @@ let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
-nnoremap <leader>df :YouCompleter GoToDefinition<<CR>
+nnoremap <leader>df :YcmCompleter GoToDefinition<<CR>
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>ic :YcmCompleter GoToInclude<CR>
 nnoremap <F5> :YouCompleteMeAndDiagnositics<CR>
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 "Do not ask when starting vim
