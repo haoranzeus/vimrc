@@ -17,6 +17,10 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'Valloric/ListToggle'
 Plugin 'scrooloose/syntastic'
 Plugin 'rdnetto/YCM-Generator'
+
+"" html5 syntax
+Plugin 'othree/html5.vim'
+
 call vundle#end()
 filetype plugin indent on
 "
@@ -45,6 +49,7 @@ nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>df :YcmCompleter GoToDefinition<<CR>
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>ic :YcmCompleter GoToInclude<CR>
+nnoremap <leader>rf :YcmCompleter GoToReferences<CR>
 nnoremap <F5> :YouCompleteMeAndDiagnositics<CR>
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 "Do not ask when starting vim
