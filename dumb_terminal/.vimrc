@@ -38,6 +38,9 @@ set shiftwidth=4
 set expandtab
 ""set softtabstop=4
 
+""set backspace
+:set backspace=indent,eol,start
+
 ""set leader key
 let mapleader=','
 
