@@ -16,6 +16,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'Valloric/ListToggle'
 Plugin 'scrooloose/syntastic'
 Plugin 'rdnetto/YCM-Generator'
+Plugin 'leafgarland/typescript-vim'
 
 "" html5 syntax
 Plugin 'othree/html5.vim'
