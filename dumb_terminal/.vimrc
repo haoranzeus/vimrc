@@ -18,6 +18,8 @@ Plugin 'Valloric/ListToggle'
 Plugin 'scrooloose/syntastic'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'elzr/vim-json'
+
 "" yaml plugin
 Plugin 'mrk21/yaml-vim'
 
@@ -64,3 +66,10 @@ let g:syntastic_always_populate_loc_list = 1
 
 ""trigger NERDTree
 nnoremap <leader>cn :NERDTreeClose<CR>
+
+"python code cant exceed 80 char
+autocmd FileType python call Highlight_80()
+fun Highlight_80()
+  highlight OverLength ctermbg=lightblue ctermfg=green
+    match OverLength /\%81v.\+/
+    endfun
