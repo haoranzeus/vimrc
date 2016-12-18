@@ -19,6 +19,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'elzr/vim-json'
+Plugin 'nvie/vim-flake8'
 
 "" yaml plugin
 Plugin 'mrk21/yaml-vim'
