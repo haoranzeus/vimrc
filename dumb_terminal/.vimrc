@@ -23,7 +23,7 @@ Plugin 'nvie/vim-flake8'
 
 "" JavaScript
 Plugin 'pangloss/vim-javascript'
-Plugin 'marijnh/tern_for_vim'
+""Plugin 'marijnh/tern_for_vim'
 
 "" yaml plugin
 Plugin 'mrk21/yaml-vim'
