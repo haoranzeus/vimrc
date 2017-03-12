@@ -20,6 +20,7 @@ Plugin 'rdnetto/YCM-Generator'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'elzr/vim-json'
 Plugin 'nvie/vim-flake8'
+Plugin 'posva/vim-vue'
 
 "" JavaScript
 Plugin 'pangloss/vim-javascript'
