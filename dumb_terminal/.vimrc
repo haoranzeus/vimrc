@@ -21,6 +21,11 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'elzr/vim-json'
 Plugin 'nvie/vim-flake8'
 
+""markdown
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'suan/vim-instant-markdown'
+
 "" JavaScript
 Plugin 'pangloss/vim-javascript'
 ""Plugin 'marijnh/tern_for_vim'
@@ -68,6 +73,9 @@ let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 "Do not ask when starting vim
 "let g:ycm_confirm_extra_conf = 0
 let g:syntastic_always_populate_loc_list = 1
+
+"" set markdown instant to the world
+let g:instant_markdown_open_to_the_world = 1
 
 ""trigger NERDTree
 nnoremap <leader>cn :NERDTreeClose<CR>
