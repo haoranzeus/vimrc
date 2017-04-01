@@ -20,6 +20,8 @@ Plugin 'rdnetto/YCM-Generator'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'elzr/vim-json'
 Plugin 'nvie/vim-flake8'
+Plugin 'posva/vim-vue'
+Plugin 'majutsushi/tagbar'
 
 ""markdown
 Plugin 'godlygeek/tabular'
@@ -60,7 +62,7 @@ set expandtab
 let mapleader=','
 
 ""YouCompleteMe configuration
-let g:ycm_python_binary_path = '/usr/local/bin/python3'
+let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
@@ -79,6 +81,9 @@ let g:instant_markdown_open_to_the_world = 1
 
 ""trigger NERDTree
 nnoremap <leader>cn :NERDTreeClose<CR>
+
+""tarbar toggle
+nmap <F9> :TagbarToggle<CR>
 
 "python code cant exceed 80 char
 autocmd FileType python call Highlight_80()
