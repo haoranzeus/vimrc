@@ -85,9 +85,12 @@ nnoremap <leader>cn :NERDTreeClose<CR>
 ""tarbar toggle
 nmap <F9> :TagbarToggle<CR>
 
+""syntax checker
+let g:syntastic_python_checkers = ['flake8']
+
 "python code cant exceed 80 char
-autocmd FileType python call Highlight_80()
-fun Highlight_80()
-  highlight OverLength ctermbg=lightblue ctermfg=green
-    match OverLength /\%81v.\+/
-    endfun
+"autocmd FileType python call Highlight_80()
+"fun Highlight_80()
+"  highlight OverLength ctermbg=lightblue ctermfg=green
+"    match OverLength /\%81v.\+/
+"    endfun
