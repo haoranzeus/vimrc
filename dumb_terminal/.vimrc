@@ -38,6 +38,9 @@ Plugin 'mrk21/yaml-vim'
 "" html5 syntax
 Plugin 'othree/html5.vim'
 
+""Java
+Plugin 'artur-shaik/vim-javacomplete2'
+
 call vundle#end()
 filetype plugin indent on
 "
@@ -94,3 +97,11 @@ let g:syntastic_python_checkers = ['flake8']
 "  highlight OverLength ctermbg=lightblue ctermfg=green
 "    match OverLength /\%81v.\+/
 "    endfun
+
+"" vim-javacomplete2
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+"" eclim
+set nocompatible
+filetype plugin indent on
+let g:EclimCompletionMethod = 'omnifunc'
