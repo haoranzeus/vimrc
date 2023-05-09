@@ -10,6 +10,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"" 开启识别文件类型。很多插件依赖于这个实现格式化等功能
+filetype plugin indent on
+
 ""set leader key
 let mapleader=','
 
@@ -30,3 +33,9 @@ let g:syntastic_always_populate_loc_list = 1
 
 ""trigger NERDTree
 nnoremap <leader>cn :NERDTreeClose<CR>
+
+"" YouCompleteMe配置
+let g:ycm_python_binary_path = '/usr/bin/python3'
+
+"" python语法检测
+let g:syntastic_python_checkers = ['flake8']
